@@ -1,0 +1,120 @@
+@import "../../style";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  text-decoration: inherit;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+body {
+  background-color: $background-grey;
+  margin: 0;
+
+  a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .blog-app {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+    font-family: 'Inter-UI', 'system-ui';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .registered-header {
+      display: grid;
+      grid-template-columns: 1fr 120px 160px 110px;
+      grid-gap: 25px;
+
+      .registered-header__user-info {
+        width: max-content;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .registered-header__username {
+          min-width: 90px;
+          max-width: 110px;
+          padding-right: 10px;
+          margin: 0;
+        }
+        .registered-header__user-avatar {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+        }
+      }
+      .registered-header__button--width {
+        width: 120px;
+      }
+      .registered-header__button--bordered {
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+    }
+
+    .unregistered-header {
+      grid-template-columns: 1fr 110px 110px;
+
+      .unregistered-header__button {
+        width: 110px;
+        border: none;
+      }
+    }
+
+    .header {
+      text-decoration: none;
+
+      background-color: white;
+      box-shadow: 0 0 15px 0 $border-grey;
+
+      width: 100%;
+      height: 80px;
+      padding: 15px 22px;
+
+      display: grid;
+      grid-gap: 25px;
+
+      .header__title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        align-self: center;
+
+        cursor: pointer;
+      }
+
+      .header__button {
+        height: 50px;
+
+        font-size: 18px;
+        background-color: inherit;
+
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .header__button--green {
+        color: $green;
+        border: 1px solid $green;
+        border-radius: 5px;
+      }
+    }
+    .ant-pagination-options {
+      display: none !important;
+    }
+
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../style";
+
+.article {
+  background-color: white;
+  width: 940px;
+  height: max-content;
+  padding: 15px 20px;
+  margin: 25px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  border: $border-grey;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 $border-grey;
+
+  .article__description {
+    color: $grey;
+    height: auto;
+    width: 700px;
+    overflow: hidden;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .article__button {
+    margin-top: 10px;
+    background-color: inherit;
+    height: 30px;
+    border: 1px solid $green;
+    color: $green;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .article__button--delete {
+    color: $red;
+    border-color: $red;
+  }
+
+  .article__text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    min-height: 600px;
+    padding-right: 30px;
+  }
+}
